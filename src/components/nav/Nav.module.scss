@@ -1,5 +1,23 @@
 .nav {
-  padding: 1rem;
-  height: 100px;
+  padding: 16px;
+  padding-left: 125px;
+  padding-right: 50px;
+  height: 65px;
   box-shadow: inset 0 -1px #333;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+  }
+
+  & > :last-child {
+    margin-left: auto;
+  }
 }
