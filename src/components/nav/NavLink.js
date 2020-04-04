@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.li.attrs(({ active }) => ({
-  border: active ? "#fff" : "#000",
+  border: active ? "#fff" : "#333",
 }))`
   cursor: pointer;
   position: relative;
@@ -15,7 +15,7 @@ export default styled.li.attrs(({ active }) => ({
     border-bottom: 1px solid ${(props) => props.border};
     position: absolute;
     left: 0;
-    top: 12px;
+    top: 13px;
   }
 
   &:hover::after {
@@ -25,6 +25,6 @@ export default styled.li.attrs(({ active }) => ({
     border-bottom: 1px solid #fff;
     position: absolute;
     left: 0;
-    top: 12px;
+    top: 13px;
   }
 `;
