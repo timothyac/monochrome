@@ -7,6 +7,8 @@ export default styled.li.attrs(({ active }) => ({
   position: relative;
   text-align: center;
   min-width: 100px;
+  text-transform: capitalize;
+  color: #fff;
 
   &:after {
     content: " ";
