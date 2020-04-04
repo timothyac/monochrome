@@ -1,14 +1,13 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 
-import Main from "../main/Main";
+import Dashboard from "../dashboard/Dashboard";
+import Route from "./Route";
 
 export default () => {
   return (
     <Switch>
-      <Route>
-        <Main />
-      </Route>
+      <Route component={Dashboard} />
     </Switch>
   );
 };
