@@ -1,6 +1,7 @@
 import React from "react";
 
 import { nav, inner } from "./Nav.module.scss";
+import NavLink from "./NavLink";
 
 export default () => {
   return (
@@ -8,10 +9,10 @@ export default () => {
       <div className={inner}>
         <h2>monochrome</h2>
         <ul>
-          <li>dashboard</li>
-          <li>tasks</li>
-          <li>proxies</li>
-          <li>accounts</li>
+          <NavLink {...{ active: true }}>dashboard</NavLink>
+          <NavLink>tasks</NavLink>
+          <NavLink>proxies</NavLink>
+          <NavLink>accounts</NavLink>
         </ul>
         <div>
           <p>sunstro</p>
