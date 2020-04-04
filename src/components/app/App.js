@@ -1,18 +1,15 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import { app } from "./App.module.scss";
-import Nav from "../nav/Nav";
-import Main from "../main/Main";
-import Footer from "../footer/Footer";
+import Routes from "../router/Routes";
 
 function App() {
   return (
     <div className={app}>
-      <Nav />
-      <Main />
-      <Footer />
+      <Routes />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
