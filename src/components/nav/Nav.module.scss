@@ -17,23 +17,6 @@
     width: 500px;
   }
 
-  li {
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    min-width: 100px;
-  }
-
-  li:hover::after {
-    content: " ";
-    height: 10px;
-    width: 100%;
-    border-bottom: 1px solid #fff;
-    position: absolute;
-    left: 0;
-    top: 32px;
-  }
-
   & > :last-child {
     margin-left: auto;
   }
