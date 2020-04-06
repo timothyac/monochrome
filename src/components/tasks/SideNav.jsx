@@ -18,15 +18,15 @@ export default () => {
         <li className={infoBar}>
           <div>
             <p>Tasks</p>
-            <p>25</p>
+            <p>5</p>
           </div>
           <div>
             <p>Proxies</p>
-            <p>50</p>
+            <p>25</p>
           </div>
           <div>
             <p>Profiles</p>
-            <p>5</p>
+            <p>3</p>
           </div>
         </li>
       </ul>
