@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "store": "Supreme",
+      "product": "Supreme®/OREO Cookies (Pack of 3)",
+      "size": "N/A",
+      "profile": "Profile 1",
+      "proxy": "VA",
+      "status": "Success"
+    },
+    {
+      "store": "Supreme",
+      "product": "Supreme®/OREO Cookies (Pack of 3)",
+      "size": "N/A",
+      "profile": "Profile 1",
+      "proxy": "VA",
+      "status": "Success"
+    },
+    {
+      "store": "Supreme",
+      "product": "Supreme®/OREO Cookies (Pack of 3)",
+      "size": "N/A",
+      "profile": "Profile 2",
+      "proxy": "CHI",
+      "status": "Failure"
+    },
+    {
+      "store": "Supreme",
+      "product": "Supreme®/OREO Cookies (Pack of 3)",
+      "size": "N/A",
+      "profile": "Profile 3",
+      "proxy": "NYC",
+      "status": "Running"
+    },
+    {
+      "store": "Supreme",
+      "product": "Supreme®/OREO Cookies (Pack of 3)",
+      "size": "N/A",
+      "profile": "Profile 3",
+      "proxy": "NYC",
+      "status": "Ready"
+    }
+  ]
+}
