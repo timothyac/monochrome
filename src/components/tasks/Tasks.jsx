@@ -1,37 +1,12 @@
 import React from "react";
 
-import { page, sideNav, buttonBar, infoBar } from "./Tasks.module.scss";
-import { Button, PrimaryButton } from "./Button";
+import { page } from "./Tasks.module.scss";
+import SideNav from "./SideNav";
 
 export default () => {
   return (
     <div className={page}>
-      <div>
-        <ul className={sideNav}>
-          <li className={buttonBar}>
-            <PrimaryButton>Create Tasks</PrimaryButton>
-            <Button>Clear Tasks</Button>
-            <Button>Start Tasks</Button>
-            <Button>Stop Tasks</Button>
-            <Button>Edit Tasks</Button>
-            <Button>Captcha</Button>
-          </li>
-          <li className={infoBar}>
-            <div>
-              <p>Tasks</p>
-              <p>25</p>
-            </div>
-            <div>
-              <p>Proxies</p>
-              <p>50</p>
-            </div>
-            <div>
-              <p>Profiles</p>
-              <p>5</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <SideNav />
       <div></div>
     </div>
   );
