@@ -5,8 +5,8 @@ export const Button = styled.button`
   background-color: #070707;
   color: #444;
   height: 3rem;
-  border-radius: 0.5rem;
-  font-size: 16px;
+  border-radius: 0.25rem;
+  font-size: 14px;
   width: 100%;
   transition: all 0.1s ease-in;
 
