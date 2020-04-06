@@ -5,10 +5,10 @@ import { nav, inner } from "./Nav.module.scss";
 import NavLink from "./NavLink";
 
 const pages = [
-  { name: "dashboard", link: "/" },
-  { name: "tasks" },
+  { name: "tasks", link: "/" },
   { name: "proxies" },
   { name: "accounts" },
+  { name: "settings" },
 ];
 
 export default () => {
