@@ -1,38 +1,24 @@
 import React from "react";
 
-import { page, sideNav, buttonBar, infoBar } from "./Tasks.module.scss";
-import { Button, PrimaryButton } from "./Button";
+import { tasks } from "../../tasks.json";
+
+import { page, taskContainer } from "./Tasks.module.scss";
+import { Task, Header } from "./Task";
+import SideNav from "./SideNav";
 
 export default () => {
   return (
     <div className={page}>
-      <div>
-        <ul className={sideNav}>
-          <li className={buttonBar}>
-            <PrimaryButton>Create Tasks</PrimaryButton>
-            <Button>Clear Tasks</Button>
-            <Button>Start Tasks</Button>
-            <Button>Stop Tasks</Button>
-            <Button>Edit Tasks</Button>
-            <Button>Captcha</Button>
-          </li>
-          <li className={infoBar}>
-            <div>
-              <p>Tasks</p>
-              <p>25</p>
-            </div>
-            <div>
-              <p>Proxies</p>
-              <p>50</p>
-            </div>
-            <div>
-              <p>Profiles</p>
-              <p>5</p>
-            </div>
-          </li>
-        </ul>
+      <SideNav />
+      <div className={taskContainer}>
+        <h1>Tasks</h1>
+        <div>
+          <Header />
+          {tasks.map((task, index) => (
+            <Task key={index} {...{ task }} />
+          ))}
+        </div>
       </div>
-      <div></div>
     </div>
   );
 };
