@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { returnTaskStatus } from "../../utils/returns";
 
 const HeaderStyle = styled.div`
   display: flex;
@@ -103,23 +104,7 @@ export const Header = () => (
 export const Task = ({ task }) => {
   const { store, product, size, profile, proxy, status } = task;
 
-  const statusColor =
-    status === "Success"
-      ? "#48bb78"
-      : status === "Failure"
-      ? "#F56565"
-      : status === "Ready"
-      ? "#4299E1"
-      : "#ECC94B";
-
-  const statusAction =
-    status === "Success"
-      ? "Upload"
-      : status === "Failure"
-      ? "Restart"
-      : status === "Ready"
-      ? "Start"
-      : "Stop";
+  const [statusColor, statusAction] = returnTaskStatus(status);
 
   return (
     <TaskStyle {...{ status: statusColor }}>
