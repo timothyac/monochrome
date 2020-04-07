@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import { returnColor } from "../../utils/returns";
+import { returnServerStatus } from "../../utils/returns";
 
 const StatusStyled = styled.div.attrs((props) => ({
-  status: returnColor(props.status),
+  status: returnServerStatus(props.status),
 }))`
   display: flex;
   align-items: center;
