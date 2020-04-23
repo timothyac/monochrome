@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "inter", sans-serif;
+  outline: none;
 }
 
 li {
@@ -13,4 +14,31 @@ li {
 
 a {
   text-decoration: none;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem;
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #fff;
+  transition: border-color 0.2s ease-in;
+
+  &:active,
+  &:focus {
+    border-color: #fff;
+  }
+}
+
+select {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
 }
